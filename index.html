@@ -47,11 +47,19 @@
         }
 
         .nav-logo {
-            color: white;
-            font-size: 1.8rem;
-            font-weight: 300;
-            letter-spacing: 3px;
-            text-decoration: none;
+            display: block;
+            height: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-logo img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-logo:hover {
+            transform: scale(1.05);
         }
 
         .nav-links {
@@ -318,7 +326,7 @@
             }
 
             .nav-logo {
-                font-size: 1.5rem;
+                height: 40px;
             }
 
             .logo {
@@ -396,7 +404,9 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">PRIME</a>
+            <a href="#hero" class="nav-logo">
+                <img src="https://imgur.com/a/f3Fci2n">
+            </a>
             <ul class="nav-links">
                 <li><a href="#catering">Catering Services</a></li>
                 <li><a href="#white-label">White Label Manufacturing</a></li>
